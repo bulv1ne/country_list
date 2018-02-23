@@ -1,0 +1,3 @@
+[submodule "country_list/country_data"]
+	path = country_list/country_data
+	url = https://github.com/umpirsky/country-list.git

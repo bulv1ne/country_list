@@ -1,0 +1,6 @@
+[report]
+precision = 2
+sort = Cover
+
+[run]
+source = country_list
