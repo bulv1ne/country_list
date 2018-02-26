@@ -25,7 +25,31 @@ List of all countries with names and ISO 3166-1 codes in all languages and all d
 Features
 --------
 
-* TODO
+Get all available languages:
+
+.. code-block:: python
+
+    from country_list import available_languages
+    for language in available_languages():
+        print(language)
+
+Get country names in english and swedish:
+
+.. code-block:: python
+
+    >>> from country_list import countries_for_language
+    >>> # countries_for_language returns a list of tuples now, might be changed to an OrderedDict
+    >>> countries = dict(countries_for_language('en'))
+    >>> print(countries['GB'])
+    'United Kingdom'
+    >>> print(countries['SE'])
+    'Sweden'
+    >>> countries = dict(countries_for_language('sv'))
+    >>> print(countries['GB'])
+    'Storbritannien'
+    >>> print(countries['SE'])
+    'Sverige'
+
 
 Credits
 -------
