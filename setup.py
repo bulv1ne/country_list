@@ -20,7 +20,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     description='List of all countries with names and ISO 3166-1 codes '
-    'in all languages and all data formats.',
+    'in all languages',
     license="MIT license",
     long_description=readme,
     include_package_data=True,
