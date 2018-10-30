@@ -1,19 +1,15 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [packages]
 
-
-
 [dev-packages]
-
 isort = "*"
 "flake8" = "*"
 coverage = "*"
 tox = "*"
 bumpversion = "*"
 twine = "*"
+black = "==18.9b0"

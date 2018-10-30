@@ -8,22 +8,22 @@ class TestCountryList(unittest.TestCase):
         self.assertEqual(
             len(country_list.available_languages()),
             586,
-            'Languages have been added/removed',
+            "Languages have been added/removed",
         )
 
     def test_countries(self):
         self.assertEqual(
-            len(country_list.countries_for_language('sv_SE')),
+            len(country_list.countries_for_language("sv_SE")),
             255,
-            'Countries have been added/removed',
+            "Countries have been added/removed",
         )
 
     def test_invalid_country(self):
         with self.assertRaises(ValueError):
-            country_list.countries_for_language('invalid')
+            country_list.countries_for_language("invalid")
 
     def test_auto_format_language(self):
         self.assertEqual(
-            country_list.countries_for_language('sv_SE'),
-            country_list.countries_for_language('sv-se'),
+            country_list.countries_for_language("sv_SE"),
+            country_list.countries_for_language("sv-se"),
         )

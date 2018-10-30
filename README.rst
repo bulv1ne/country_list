@@ -15,6 +15,9 @@ Country List
 .. image:: https://coveralls.io/repos/github/bulv1ne/country_list/badge.svg?branch=master
         :target: https://coveralls.io/github/bulv1ne/country_list?branch=master
 
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/ambv/black
+
 
 List of all countries with names and ISO 3166-1 codes in all languages and all data formats.
 
