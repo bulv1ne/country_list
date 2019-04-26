@@ -7,7 +7,7 @@ class TestCountryList(unittest.TestCase):
     def test_available_languages(self):
         self.assertEqual(
             len(country_list.available_languages()),
-            586,
+            620,
             "Languages have been added/removed",
         )
 
