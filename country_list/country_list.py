@@ -12,7 +12,7 @@ def available_languages():
 
 
 @lru_cache()
-def countries_for_language(lang, encoding='utf8'):
+def countries_for_language(lang, encoding="utf8"):
     path = data_dir / _clean_lang(lang) / "country.csv"
     with path.open(encoding=encoding) as file_:
         return list(map(itemgetter("id", "value"), csv.DictReader(file_)))
