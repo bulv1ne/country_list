@@ -1,24 +1,26 @@
 import csv
 from functools import lru_cache
-from operator import itemgetter
 from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 
 data_dir = Path(__file__).parent / "country_data" / "data"
 
 
 @lru_cache(1)
-def available_languages():
+def available_languages() -> List[str]:
     return sorted(x.name for x in data_dir.iterdir() if (x / "country.csv").exists())
 
 
 @lru_cache()
-def countries_for_language(lang, encoding="utf8"):
+def countries_for_language(
+    lang: str, encoding: Optional[str] = "utf8"
+) -> List[Tuple[str, str]]:
     path = data_dir / _clean_lang(lang) / "country.csv"
     with path.open(encoding=encoding) as file_:
-        return list(map(itemgetter("id", "value"), csv.DictReader(file_)))
+        return [(row["id"], row["value"]) for row in csv.DictReader(file_)]
 
 
-def _clean_lang(lang):
+def _clean_lang(lang: str) -> str:
     cleaned_lang = lang.replace("-", "_").lower()
     try:
         return _languages()[cleaned_lang]
@@ -27,5 +29,5 @@ def _clean_lang(lang):
 
 
 @lru_cache(1)
-def _languages():
+def _languages() -> Dict[str, str]:
     return {language.lower(): language for language in available_languages()}
