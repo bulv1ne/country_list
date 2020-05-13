@@ -19,16 +19,13 @@ Country List
     :target: https://github.com/ambv/black
 
 
-List of all countries with names and ISO 3166-1 codes in all languages and all data formats.
-
-
-* Free software: MIT license
 
 
 Features
 --------
 
-- Get a list of countries with it's ISO 3166-1 code and the translation in provided language.
+- List of all countries with names and ISO 3166-1 codes in all languages and all data formats.
+
 
 Installation
 ------------
@@ -79,3 +76,8 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 .. _`umpirsky/country-list`: https://github.com/umpirsky/country-list
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+License
+-------
+
+The project is licensed under the MIT license.
