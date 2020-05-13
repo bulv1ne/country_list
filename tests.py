@@ -7,14 +7,14 @@ class TestCountryList(unittest.TestCase):
     def test_available_languages(self):
         self.assertEqual(
             len(country_list.available_languages()),
-            620,
+            628,
             "Languages have been added/removed",
         )
 
     def test_countries(self):
         self.assertEqual(
             len(country_list.countries_for_language("sv_SE")),
-            255,
+            249,
             "Countries have been added/removed",
         )
 
