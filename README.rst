@@ -28,11 +28,26 @@ List of all countries with names and ISO 3166-1 codes in all languages and all d
 Features
 --------
 
+- Get a list of countries with it's ISO 3166-1 code and the translation in provided language.
+
+Installation
+------------
+
+Install country_list by running:
+
+.. code-block:: sh
+
+    pip install country_list
+
+Usage
+-----
+
 Get all available languages:
 
 .. code-block:: python
 
     from country_list import available_languages
+
     for language in available_languages():
         print(language)
 
