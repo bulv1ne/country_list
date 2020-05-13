@@ -28,6 +28,6 @@ setup(
     name="country_list",
     packages=find_packages(include=["country_list"]),
     url="https://github.com/bulv1ne/country_list",
-    version="0.1.5",
+    version="0.2.0",
     zip_safe=False,
 )
