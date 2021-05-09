@@ -9,7 +9,7 @@ repos:
       types: [python]
     - id: isort
       name: Isort
-      entry: pipenv run isort -y
+      entry: pipenv run isort
       language: system
       types: [python]
     - id: flake8
