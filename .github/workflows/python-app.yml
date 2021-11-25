@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    name: Test on python ${{ matrix.python_version }}
+    name: Test on python ${{ matrix.python_version }} ${{ matrix.tox_env }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -24,6 +24,14 @@ jobs:
             tox_env: py39
           - python_version: '3.10'
             tox_env: py310
+          - python_version: '3.9'
+            tox_env: flake8
+          - python_version: '3.9'
+            tox_env: isort
+          - python_version: '3.9'
+            tox_env: black
+          - python_version: '3.9'
+            tox_env: mypy
         
     steps:
     - uses: actions/checkout@v2
