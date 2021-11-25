@@ -5,9 +5,6 @@ Country List
 .. image:: https://img.shields.io/pypi/v/country_list.svg
         :target: https://pypi.python.org/pypi/country_list
 
-.. image:: https://img.shields.io/travis/bulv1ne/country_list.svg
-        :target: https://travis-ci.org/bulv1ne/country_list
-
 .. image:: https://pyup.io/repos/github/bulv1ne/country_list/shield.svg
         :target: https://pyup.io/repos/github/bulv1ne/country_list/
         :alt: Updates
@@ -16,7 +13,7 @@ Country List
         :target: https://coveralls.io/github/bulv1ne/country_list?branch=master
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-    :target: https://github.com/ambv/black
+        :target: https://github.com/psf/black
 
 
 
