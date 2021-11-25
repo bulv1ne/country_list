@@ -41,5 +41,7 @@ jobs:
       run: |
         tox -e ${{ matrix.tox_env }}
     - name: Send to coveralls
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
       run: |
         coveralls
