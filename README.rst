@@ -65,6 +65,22 @@ Get country names in english and swedish:
     >>> print(countries['SE'])
     'Sverige'
 
+Get country codes from country name:
+
+.. code-block:: python
+
+    >>> from country_list import countries_for_language
+    >>> # countries_for_language returns a list of tuples now, might be changed to an OrderedDict
+    >>> country_names = {name: code for code, name in countries_for_language('en')}
+    >>> print(country_names['United Kingdom'])
+    'GB'
+    >>> print(country_names['Sweden'])
+    'SE'
+    >>> country_names = {name: code for code, name in countries_for_language('sv')}
+    >>> print(country_names['Storbritannien'])
+    'GB'
+    >>> print(country_names['Sverige'])
+    'SE'
 
 Credits
 -------
