@@ -2,6 +2,9 @@
 Country List
 ============
 
+.. image:: https://github.com/bulv1ne/country_list/actions/workflows/python-app.yml/badge.svg
+        :target: https://github.com/bulv1ne/country_list/actions/workflows/python-app.yml
+
 .. image:: https://img.shields.io/pypi/v/country_list.svg
         :target: https://pypi.python.org/pypi/country_list
 
@@ -14,8 +17,6 @@ Country List
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
         :target: https://github.com/psf/black
-
-
 
 
 Features
