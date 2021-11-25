@@ -11,7 +11,7 @@ on:
 
 jobs:
   code-quality:
-    name: Code quality
+    name: Code quality ${{ matrix.tox_env }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -35,7 +35,7 @@ jobs:
         tox -e ${{ matrix.tox_env }}
 
   test:
-    name: Test on python
+    name: Test on python ${{ matrix.python_version }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
