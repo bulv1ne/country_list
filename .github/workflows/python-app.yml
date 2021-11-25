@@ -16,6 +16,7 @@ jobs:
     strategy:
       matrix:
         python_version: ['3.9']
+        tox_env: [flake8, isort, black, mypy]
 
     steps:
     - uses: actions/checkout@v2
@@ -29,7 +30,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install tox coverage
-    - name: Run tox
+    - name: Run tox ${{ matrix.tox_env }}
       run: |
         tox -e ${{ matrix.tox_env }}
 
