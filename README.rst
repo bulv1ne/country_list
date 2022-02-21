@@ -18,6 +18,10 @@ Country List
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
         :target: https://github.com/psf/black
 
+.. image:: https://sonarcloud.io/api/project_badges/measure?project=bulv1ne_country_list&metric=alert_status
+        :target: https://sonarcloud.io/summary/new_code?id=bulv1ne_country_list
+        :alt: Quality Gate Status
+
 
 Features
 --------
