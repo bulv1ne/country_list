@@ -1,33 +1,14 @@
 version: 2
-registries:
-  python-index-pypi-python-org-simple:
-    type: python-index
-    url: https://pypi.python.org/simple/
-
 updates:
-- package-ecosystem: pip
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "07:00"
-    timezone: Europe/Stockholm
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: twine
-    versions:
-    - 3.4.0
-  - dependency-name: coverage
-    versions:
-    - "5.4"
-    - "5.5"
-  - dependency-name: mypy
-    versions:
-    - "0.812"
-  - dependency-name: cryptography
-    versions:
-    - 3.3.2
-  - dependency-name: bleach
-    versions:
-    - 3.3.0
-  registries:
-  - python-index-pypi-python-org-simple
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "weekly"
