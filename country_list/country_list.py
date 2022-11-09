@@ -1,7 +1,7 @@
 import csv
 from functools import lru_cache
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import List, Optional, Tuple
 
 data_dir = Path(__file__).parent / "country_data" / "data"
 
@@ -22,12 +22,7 @@ def countries_for_language(
 
 def _clean_lang(lang: str) -> str:
     cleaned_lang = lang.replace("-", "_").lower()
-    try:
-        return _languages()[cleaned_lang]
-    except KeyError:
-        raise ValueError("Language {} not found".format(lang)) from None
-
-
-@lru_cache(1)
-def _languages() -> Dict[str, str]:
-    return {language.lower(): language for language in available_languages()}
+    for language in available_languages():
+        if cleaned_lang == language.lower():
+            return language
+    raise ValueError("Language {} not found".format(lang))
