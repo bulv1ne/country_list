@@ -23,7 +23,7 @@ jobs:
       with:
         submodules: true
     - name: Set up Python ${{ matrix.python_version }}
-      uses: actions/setup-python@v4.6.1
+      uses: actions/setup-python@v4.7.0
       with:
         python-version: ${{ matrix.python_version }}
     - name: Install dependencies
@@ -56,7 +56,7 @@ jobs:
       with:
         submodules: true
     - name: Set up Python ${{ matrix.python_version }}
-      uses: actions/setup-python@v4.6.1
+      uses: actions/setup-python@v4.7.0
       with:
         python-version: ${{ matrix.python_version }}
     - name: Install dependencies
