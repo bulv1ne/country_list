@@ -19,7 +19,7 @@ jobs:
         tox_env: [flake8, isort, black, mypy]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         submodules: true
     - name: Set up Python ${{ matrix.python_version }}
@@ -52,7 +52,7 @@ jobs:
             tox_env: py311
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         submodules: true
     - name: Set up Python ${{ matrix.python_version }}
