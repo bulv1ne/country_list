@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python_version: ['3.9']
+        python_version: ['3.11']
         tox_env: [flake8, isort, black, mypy]
 
     steps:
@@ -40,8 +40,6 @@ jobs:
     strategy:
       matrix:
         include:
-          - python_version: '3.7'
-            tox_env: py37
           - python_version: '3.8'
             tox_env: py38
           - python_version: '3.9'
@@ -50,6 +48,8 @@ jobs:
             tox_env: py310
           - python_version: '3.11'
             tox_env: py311
+          - python_version: '3.12'
+            tox_env: py312
 
     steps:
     - uses: actions/checkout@v4
