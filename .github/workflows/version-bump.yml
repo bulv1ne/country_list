@@ -1,0 +1,21 @@
+name: Version bump
+
+on:
+  workflow_dispatch:
+    inputs:
+      versionPart:
+        description: 'Version bump part'
+        required: true
+        default: patch
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  version-bump:
+    name: Version bump on release branch
+    uses: bulv1ne/poetry-bumpversion/.github/workflows/version-bump.yml@main
+    with:
+      versionPart: ${{ inputs.versionPart }}
