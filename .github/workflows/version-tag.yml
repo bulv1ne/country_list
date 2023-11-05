@@ -1,0 +1,11 @@
+name: Version tag
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  version-tag:
+    name: Version tag
+    uses: bulv1ne/poetry-bumpversion/.github/workflows/version-tag.yml@main
