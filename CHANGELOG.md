@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2023-11-10
+
 ## [1.1.0] - 2023-11-05
 ### Added
 - Support for python 3.12
@@ -19,5 +21,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First version
 
 
-[Unreleased]: https://github.com/bulv1ne/country_list/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/bulv1ne/country_list/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/bulv1ne/country_list/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/bulv1ne/country_list/compare/v1.0.0...v1.1.0
