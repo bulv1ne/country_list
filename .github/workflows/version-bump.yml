@@ -16,6 +16,6 @@ on:
 jobs:
   version-bump:
     name: Version bump on release branch
-    uses: bulv1ne/poetry-bumpversion/.github/workflows/version-bump.yml@main
+    uses: bulv1ne/poetry-bumpversion/.github/workflows/version-bump.yml@improve-github-actions
     with:
       versionPart: ${{ inputs.versionPart }}
