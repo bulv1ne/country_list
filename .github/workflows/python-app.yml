@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         python_version: ['3.15']
-        tox_env: [flake8, isort, black, mypy]
+        tox_env: [ruff-format, ruff-check, mypy]
 
     steps:
     - uses: actions/checkout@v7

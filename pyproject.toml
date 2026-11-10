@@ -27,14 +27,12 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.8"
 
-[tool.poetry.dev-dependencies]
-black = "*"
-isort = "*"
-flake8 = "*"
+[tool.poetry.group.dev.dependencies]
 coverage = "*"
 mypy = "*"
 pre-commit = "*"
 tox = "*"
+ruff = "^0.17.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
