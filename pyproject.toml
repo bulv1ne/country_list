@@ -6,7 +6,9 @@ authors = ["Niels Lemmens <1936122+bulv1ne@users.noreply.github.com>"]
 readme = "README.rst"
 repository = "https://github.com/bulv1ne/country_list/"
 license = "MIT"
-include = ["country_list/country_data/data/*/country.csv"]
+include = [
+    { path = "country_list/country_data/data/*/country.csv", format = ["sdist", "wheel"] }
+]
 exclude = ["country_list/country_data/*"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
